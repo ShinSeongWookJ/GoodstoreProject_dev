@@ -11,19 +11,27 @@
 	
 	
 	
-		<c:if test="${loginUser.status eq 9 or k_loginUser.status eq 9}">
-	<p class="text-center my-4">
-			<a href="write">글쓰기</a>
-	</p>
-	</c:if>
-	
-	
+	<!-- -----관리자만 보이도록 설정--------------------------------------- -->
 	<c:if test="${loginUser.status eq 9 or k_loginUser.status eq 9}">
-	<p class="text-right my-4" >
-		<a	href="#noticeCon" data-toggle="modal">공지글 설정</a> |
-		<a	href="deleteNotice">공지글 해제</a>
-	</p>
+		<!-- -----글쓰기 버튼--------------------------------------- -->
+		<p class="text-center my-4">
+			<a href="write">글쓰기</a>
+		</p>
+		<!-- ---------------------------------------------------  -->
 	</c:if>
+	<!-- -----------------------------------------------------------  -->
+	
+	
+	<!-- -----관리자만 보이도록 설정--------------------------------------- -->
+	<c:if test="${loginUser.status eq 9 or k_loginUser.status eq 9}">
+		<!-- -----공지글 설정 관련 버튼-------------------------------- -->
+		<p class="text-right my-4" >
+			<a	href="#noticeCon" data-toggle="modal">공지글 설정</a> |
+			<a	href="deleteNotice">공지글 해제</a>
+		</p>
+		<!-- ----------------------------------------------------- -->
+	</c:if>
+	<!-- -----------------------------------------------------------  -->
 	
 	
 	
