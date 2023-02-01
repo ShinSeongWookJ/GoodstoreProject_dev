@@ -37,6 +37,24 @@
 	<!-- -----------------------------------------------------------  -->	
 	
 	
+	<!-- 검색, 페이지 폼------------------------------- -->
+	<form>
+		<div>
+			<div class="col-md-9 text-center">
+				<form>
+					<select>
+						<option>---검색 유형---</option>
+						<option>제목</option>
+						<option>작성자</option>
+						<option>내용</option>
+					</select>
+				</form>
+			</div>
+		</div>
+	</form>
+	<!-- ------------------------------------------ -->
+	
+	
 	
 	<table class="table table-condensed table-striped">
 		<thead>
