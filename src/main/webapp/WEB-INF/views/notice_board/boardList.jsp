@@ -48,6 +48,8 @@
 						<option>작성자</option>
 						<option>내용</option>
 					</select>
+					<input placeholder="검색어 입력">
+					<button class="btn btn-outline-primary">검 색</button>
 				</form>
 			</div>
 		</div>
