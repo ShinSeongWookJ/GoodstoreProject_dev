@@ -41,14 +41,14 @@
 	<form>
 		<div>
 			<div class="col-md-9 text-center">
-				<form>
-					<select>
-						<option>---검색 유형---</option>
-						<option>제목</option>
-						<option>작성자</option>
-						<option>내용</option>
+				<form name="searchF" action="list">
+					<select name="findType">
+						<option value="">---검색 유형---</option>
+						<option value="1">제목</option>
+						<option value="2">작성자</option>
+						<option value="3">내용</option>
 					</select>
-					<input placeholder="검색어 입력">
+					<input type="text" name="findKeyword" placeholder="검색어 입력">
 					<button class="btn btn-outline-primary">검 색</button>
 				</form>
 			</div>
