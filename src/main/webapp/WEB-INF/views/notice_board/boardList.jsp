@@ -103,18 +103,8 @@
 				</c:forEach>
 			</c:if>
 		</tbody>
-		<tfoot>
-			<tr>
-				<td>
-					${pageNavi }
-				</td>
-				<td>
-					총 게시글 수 : <c:out value="${paging.totalCount }"/><br>
-					<span><c:out value="${paging.cpage }"/></span> /
-					<c:out value="${paging.pageCount }"/>
-				</td>
-			</tr>
-		</tfoot>
+	
+	
 	</table>
 
 </div>
