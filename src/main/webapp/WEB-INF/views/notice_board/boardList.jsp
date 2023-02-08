@@ -37,22 +37,6 @@
 	<!-- -----------------------------------------------------------  -->	
 	
 	
-	<!-- ---페이징처리---------------------------------- -->
-	<form>
-		<div>
-			<div>
-				<form name="pageSizeF" action="list">
-					
-					
-					<select>
-					
-					</select>
-				</form>
-			</div>
-		</div>
-	</form>
-	<!-- ---------------------------------------------- -->
-	
 	
 	<table class="table table-condensed table-striped">
 		<thead>
