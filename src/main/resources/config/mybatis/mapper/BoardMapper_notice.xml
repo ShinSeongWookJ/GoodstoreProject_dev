@@ -24,6 +24,11 @@
 		select * from notice_spring_board order by num desc
 	</select>
 	
+	<!-- 조회수 증가 기능 -->
+	<update id="updateReadnum" parameterType="int">
+		update notice_spring_board set readnum=readnum+1 where num=#{value}
+	</update>
+	
 	<!-- 글번호에 해당하는 글 가져오기 -->
 	<select id="selectBoardByIdx" resultType="Board" parameterType="_int">
 		select * from notice_spring_board where num=#{value}

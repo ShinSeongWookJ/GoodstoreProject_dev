@@ -67,5 +67,11 @@ public class BoardServiceImpl implements BoardService{
 		return this.boardMapper.deleteNotice();
 	}
 
+	// 글번호에 해당하는 글 조회수 증가
+	@Override
+	public int updateReadnum(Integer idx) {
+		// TODO Auto-generated method stub
+		return this.boardMapper.updateReadnum(idx);
+	}
 
 }

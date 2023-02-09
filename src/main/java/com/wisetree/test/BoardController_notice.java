@@ -153,6 +153,10 @@ public class BoardController_notice {
 	public String boardView(Model m,@PathVariable("num") int num) {
 		log.info("num=="+num);
 		
+		//해당 게시글 열면 조회수 증가
+		int n = this.boardService.updateReadnum(num);
+		
+		//해당 게시글 열기
 		BoardVO board=this.boardService.selectBoardByIdx(num);
 		m.addAttribute("board",board);
 		

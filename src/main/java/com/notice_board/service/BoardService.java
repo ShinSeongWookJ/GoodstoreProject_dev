@@ -23,5 +23,8 @@ public interface BoardService {
 	int noticeSelect();
 	
 	int deleteNotice();
+	
+	// 글번호에 해당하는 글 조회수 증가
+	int updateReadnum(Integer idx);
 
 }
